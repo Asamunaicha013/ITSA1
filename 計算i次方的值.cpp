@@ -1,18 +1,20 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main() {
     int number;
     long long a;
-    scanf("%d", &number);
+    cin >> number;
 
     for (int i = 0; i < number; i++) {
-        scanf("%lld", &a);
+        cin >> a;
 
         if (a > 31) {
-            printf("Value of more than 31\n");
+            cout << "Value of more than 31\n";
         } else {
             long long b = 1LL << a;
-            printf("%lld\n", b);
+            cout << b << "\n";
         }
     }
     return 0;
